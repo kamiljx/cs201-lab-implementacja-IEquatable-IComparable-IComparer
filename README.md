@@ -34,7 +34,7 @@ Wykonaj kolejno podane poniżej kroki.
 
 2. Dostęp do danych zrealizuj jako publiczne _properties_ (read-write).
    * dla `Nazwisko` zaimplementuj obcinanie spacji przed i po
-   * dla `DataZatrudnienia` zaimplementuj: data zatrudnienia wcześniej niż dzisiaj, w przeciwnym przypadku `throw new ArgumentException()`
+   * dla `DataZatrudnienia` zaimplementuj: data zatrudnienia nie później niż dzisiaj, w przeciwnym przypadku `throw new ArgumentException()`
    * dla `Wynagrodzenie` zaimplementuj: przy próbie podstawienia wartości ujemnej, przypisz `0`.
 
 3. Przesłoń metodę `ToString()` zwracającą tekstową reprezentację obiektu w formie:
